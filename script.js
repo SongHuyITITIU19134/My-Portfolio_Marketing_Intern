@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const roles = ["Marketing Intern", "Thực tập Marketing", "Marketing Kỹ Thuật Số","Quản lý mạng xã hội","Chiến lược thương hiệu","Thiết kế Canva","Công cụ AI cho nội dung"];
+const roles = ["Marketing Intern", "Thực tập Marketing"];
 let currentRoleIndex = 0;
 let currentText = "";
 let isDeleting = false;
