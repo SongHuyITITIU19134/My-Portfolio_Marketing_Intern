@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Check if scrolled to the end of the gallery
       const scrollPosition = gallery.scrollLeft;
       const maxScroll = gallery.scrollWidth - gallery.clientWidth;
-      const threshold = 50; // Show button when within 50px of the end
+      const threshold = 50; 
 
       if (scrollPosition >= maxScroll - threshold) {
         seeMoreBtn.classList.add("show");
