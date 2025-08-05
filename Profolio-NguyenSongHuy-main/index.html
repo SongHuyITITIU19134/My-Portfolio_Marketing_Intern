@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio của Tôi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="loader">
+    <div></div>
+    <div></div>
+    <div class="greeting-text"></div>
+    <div></div>
+  </div>
+
+  <nav id="desktop-nav" class="hidden">
+    <div class="logo">Huynh My</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Giới Thiệu</a></li>
+        <li><a href="#projects">Dự Án</a></li>
+        <li><a href="#skills">Kỹ Năng</a></li>
+        <li><a href="#contact">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hamburger Menu Icon for Mobile -->
+  <div id="hamburger-nav" class="hamburger-menu hidden">
+    <div class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Dropdown for mobile -->
+    <ul class="menu-links">
+      <li><a href="#about">Giới Thiệu</a></li>
+      <li><a href="#projects">Dự Án</a></li>
+      <li><a href="#skills">Kỹ Năng</a></li>
+      <li><a href="#contact">Liên Hệ</a></li>
+    </ul>
+  </div>
+
+  <section id="profile" class="hidden">
+    <div class="section__pic-container hidden">
+      <img src="./assets/avater.jpg" alt="Ảnh đại diện Huỳnh My" />
+    </div>
+    <div class="section__text hidden">
+      <p class="section__text__p1 hidden">Xin chào, Tôi là </p>
+      <h1 class="title hidden">Huỳnh My</h1>
+      <p class="section__text__p2 hidden" id="developer-role">Thực Tập Marketing</p>
+      <div class="btn-container hidden">
+        <button class="btn btn-color-2 hidden"
+          onclick="window.open('./assets/CV - LÝ HUỲNH MY - MARKETING INTERN.pdf')">
+          Tải CV
+        </button>
+        <button class="btn btn-color-1 hidden" onclick="location.href='./#contact'">
+          Thông Tin Liên Hệ
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="hidden" style="height: 90rem;">
+    <div style="margin-top: 50px; margin-bottom: 50px">
+      <p class="section__text__p1">Tìm Hiểu Thêm</p>
+      <h1 class="title">Thông Tin Về Tôi</h1>
+      <div class="text-container">
+        <p style="font-size: medium;">
+          Tôi là sinh viên năm cuối chuyên ngành Truyền thông Marketing, tôi đang tìm kiếm cơ hội để học hỏi và
+          phát triển kỹ năng trong lĩnh vực Marketing. Tôi mong muốn được tham gia vào một môi trường làm việc
+          năng động và thú vị, nơi tôi có thể đóng góp và phát triển bản thân.
+        </p>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Biểu tượng kinh nghiệm" class="icon" />
+            <h2>KINH NGHIỆM LÀM VIỆC</h2>
+            <div class="experience-item">
+              <h4>Content Creator & Video Editor (Freelance)</h4>
+              <p class="date">01/2025 - 06/2025</p>
+              <ul>
+                <li>Viết nội dung bằng AI cho các video YouTube chủ đề sức khoẻ</li>
+                <li>Tiếp nhận clip hoạt hình có sẵn, viết lời thoại phù hợp với nội dung và đối tượng mục tiêu</li>
+                <li>Chỉnh sửa clip bằng CapCut để hoàn thiện video</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <h4>Nhân viên pha chế - phục vụ - thu ngân (Part-time)</h4>
+              <p class="date">05/2024 - 12/2024</p>
+              <h5>Công ty TNHH Quốc Tế COBI (Cobi Bread)</h5>
+              <ul>
+                <li>Pha chế đồ uống, tư vấn sản phẩm bánh và phục vụ khách tại quầy</li>
+                <li>Giới thiệu món mới và hỗ trợ thử sản phẩm theo chương trình định kỳ</li>
+                <li>Thực hiện thanh toán, chăm sóc khách hàng và hỗ trợ trưng bày sản phẩm</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <h4>Nhân viên pha chế - phục vụ - thu ngân (Part-time)</h4>
+              <p class="date">03/2023 - 11/2023</p>
+              <h5>Công ty Cổ phần Dịch vụ Cà phê Cao Nguyên (Highlands Coffee)</h5>
+              <ul>
+                <li>Pha chế đồ uống, phục vụ khách tại quầy</li>
+                <li>Tư vấn cà phê - giới thiệu công dụng, hương vị phù hợp với từng nhu cầu</li>
+                <li>Thực hiện thanh toán, chăm sóc khách hàng</li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Biểu tượng giáo dục" class="icon" />
+            <h2>TRÌNH ĐỘ HỌC VẤN</h2>
+            <h3>Trường đại học Tài chính - Marketing</h3>
+            <p>Chuyên ngành Truyền thông Marketing</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Biểu tượng mũi tên" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+
+  <section id="projects" class="hidden" style="height: auto; min-height: 100vh;">
+    <div style="margin-top: 50px; margin-bottom: 50px">
+      <p class="section__text__p1">Tìm hiểu thêm về</p>
+      <h1 class="title">DỰ ÁN & KỸ NĂNG</h1>
+    </div>
+
+    <!-- Section 1: Project Showcase -->
+    <div class="project-showcase-section">
+      <h2 class="section-subtitle">Dự Án Nhóm</h2>
+
+      <div class="project-cards">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Lên ý tưởng cho sự kiện thời trang của thương hiệu Elise</h3>
+            <span class="project-timeline">05/2025 - 07/2025</span>
+          </div>
+
+          <div class="project-gallery-container">
+            <div class="project-gallery">
+              <div class="gallery-item">
+                <img src="./assets/Event/Elise Fashion Show Le Jardin de Roses (1).jpeg"
+                  alt="Elise Fashion Event Concept" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/Event/10.jpeg" alt="Event Planning Process" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/Event/15.jpeg" alt="Event Timeline" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/Event/18.jpeg" alt="Event Setup" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/Event/19.jpeg" alt="Event Design" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/Event/20.jpeg" alt="Event Execution" />
+              </div>
+            </div>
+            <button class="gallery-nav prev" onclick="scrollGallery('prev', this)">
+              <svg viewBox="0 0 24 24">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              </svg>
+            </button>
+            <button class="gallery-nav next" onclick="scrollGallery('next', this)">
+              <svg viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+            </button>
+            <button class="see-more-btn" onclick="openDriveLink('event')">
+              Xem thêm ảnh
+            </button>
+          </div>
+
+          <div class="project-details">
+            <div class="project-work">
+              <h4>Công việc thực hiện:</h4>
+              <ul>
+                <li>Phát triển concept, idea, theme cho sự kiện ra mắt BST mới</li>
+                <li>Xác định đối tượng khách mời mục tiêu, đề xuất hoạt động tương tác</li>
+                <li>Thiết kế sơ đồ không gian, timeline chương trình chi tiết</li>
+                <li>Viết kịch bản MC và quản lý logistics sự kiện</li>
+              </ul>
+            </div>
+            <div class="project-result">
+              <h4>Kết quả:</h4>
+              <p>Ý tưởng được đánh giá sáng tạo và khả thi, đạt <strong>8.8/10 điểm</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Phát triển fanpage thương hiệu Máy rửa mặt HealthSkin</h3>
+            <span class="project-timeline">10/2024 - 12/2024</span>
+          </div>
+
+          <div class="project-gallery-container">
+            <div class="project-gallery">
+              <div class="gallery-item">
+                <img src="./assets/AI Marketing/caption(1).png" alt="HealthSkin Fanpage Design" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/AI Marketing/caption(2).png" alt="Content Creation" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/AI Marketing/caption.png" alt="Social Media Strategy" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/AI Marketing/hình ảnh(1).jpg" alt="AI Content Creation" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/AI Marketing/hình ảnh(2).jpg" alt="AI Strategy" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/AI Marketing/hình ảnh.jpg" alt="AI Tools" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/AI Marketing/hình ảnh(4).jpg" alt="AI Analytics" />
+              </div>
+              <div class="gallery-item">
+                <img src="./assets/AI Marketing/hình ảnh(5).jpg" alt="AI Analytics" />
+              </div>
+            </div>
+            <button class="gallery-nav prev" onclick="scrollGallery('prev', this)">
+              <svg viewBox="0 0 24 24">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              </svg>
+            </button>
+            <button class="gallery-nav next" onclick="scrollGallery('next', this)">
+              <svg viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+            </button>
+            <button class="see-more-btn" onclick="openDriveLink('event')">
+              Xem thêm ảnh
+            </button>
+          </div>
+
+          <div class="project-details">
+            <div class="project-work">
+              <h4>Công việc thực hiện:</h4>
+              <ul>
+                <li>Xây dựng fanpage Facebook cho thương hiệu máy rửa mặt HealthSkin</li>
+                <li>Sử dụng công cụ AI (ChatGPT, Canva AI, Dreamina, Hailuo AI) để sáng tạo nội dung</li>
+                <li>Phối hợp lên lịch đăng bài, viết nội dung quảng bá sản phẩm</li>
+                <li>Quản lý tương tác và tối ưu hóa hiệu suất fanpage</li>
+              </ul>
+            </div>
+            <div class="project-result">
+              <h4>Kết quả:</h4>
+              <p>Được <strong>9.5/10 điểm</strong>, được đánh giá cao về tính ứng dụng và sáng tạo nội dung số</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Skills -->
+
+    <div class="skills-section" id="skills">
+      <h2 class="section-subtitle">Kỹ Năng Chuyên Môn</h2>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Marketing Kỹ Thuật Số</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Quản lý mạng xã hội</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Sáng tạo nội dung</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Chiến lược thương hiệu</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Lập kế hoạch chiến dịch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Thiết Kế & Sáng Tạo</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Thiết kế Canva</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Chỉnh sửa video (CapCut)</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Công cụ AI cho nội dung</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Kể chuyện bằng hình ảnh</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Kỹ Năng Chuyên Nghiệp</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Quản lý thời gian</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Làm việc nhóm</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Bộ công cụ Microsoft Office</span>
+            </div>
+            <div class="skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Giải quyết vấn đề</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <img src="./assets/arrow.png" alt="Biểu tượng mũi tên" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <section id="contact" class="hidden">
+    <p class="section__text__p1 hidden">Liên Hệ</p>
+    <h1 class="title hidden">Thông Tin Liên Hệ</h1>
+    <div class="contact-info-upper-container hidden">
+      <div class="contact-info-container hidden">
+        <img src="./assets/email.png" alt="Biểu tượng email" class="icon contact-icon email-icon hidden" />
+        <p><a href="mailto:lhuynmy226@gmail.com">lhuynmy226@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container hidden">
+        <img src="./assets/icons8-zalo-50.png" alt="Biểu tượng điện thoại" class="icon contact-icon hidden" />
+        <p><a href="">0947 881 844</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="hidden">
+    <nav>
+      <div class="nav-links-container hidden">
+        <ul class="nav-links hidden">
+          <li><a href="#about">Giới Thiệu</a></li>
+        <li><a href="#projects">Dự Án</a></li>
+        <li><a href="#skills">Kỹ Năng</a></li>
+        <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Bản quyền &#169; 2025 Huỳnh My.</p>
+  </footer>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modalImage" src="" alt="Full size image">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
