@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const roles = ["Marketing Intern", "Thực tập Marketing"];
+const roles = ["Marketing Intern", "Thực Tập Sinh Marketing"];
 let currentRoleIndex = 0;
 let currentText = "";
 let isDeleting = false;
