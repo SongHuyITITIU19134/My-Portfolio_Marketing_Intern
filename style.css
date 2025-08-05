@@ -318,7 +318,7 @@ margin: 0 10rem;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+  text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1722,5 +1722,82 @@ a:hover {
   #modalImage {
     max-width: 98%;
     max-height: 80%;
+  }
+}
+
+/* Education Section Styles */
+.education-details {
+  margin-top: 2rem;
+}
+
+.education-category {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 1rem;
+  border-left: 4px solid #007bff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.education-category h4 {
+  color: #007bff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.education-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.education-item:hover {
+  background-color: #e9ecef;
+  transform: translateX(5px);
+}
+
+.education-item span {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.education-item .icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* Responsive education section */
+@media (max-width: 768px) {
+  .education-category {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .education-category h4 {
+    font-size: 1.1rem;
+  }
+  
+  .education-item span {
+    font-size: 0.9rem;
   }
 }
